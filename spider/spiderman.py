@@ -6,8 +6,6 @@ import conf
 from filedeal import file_downloader
 from spider import html_parser
 from spider import html_downloader
-from spider import url_manager
-from spider import html_output
 
 '''
 
