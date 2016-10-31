@@ -37,7 +37,11 @@
 python 2.7.X
 <br/>
 需要安装的支持模块:
-BeautifulSoup (pip install或者下载源代码包setup.py),下载链接:https://pypi.python.org/pypi/beautifulsoup4/4.3.2
+<br/>
+BeautifulSoup (pip install或者下载源代码包setup.py)
+<br/>
+下载链接:https://pypi.python.org/pypi/beautifulsoup4/4.3.2
+<br/>
 <br/>
 运行:在windows上直接双击start.bat,linux上没试
 <br/>
@@ -54,3 +58,7 @@ BeautifulSoup (pip install或者下载源代码包setup.py),下载链接:https:/
 ![](yanshi2.png)
 <br/>
 ![](yanshi3.png)
+<br/>
+-----------------------2016年10月31号更新------------------------
+<br/>
+修改为新的解析方式，突破慕课网的封锁，添加使用说明截图
