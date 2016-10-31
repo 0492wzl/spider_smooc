@@ -35,13 +35,22 @@
 
 运行环境:
 python 2.7.X
+<br/>
 需要安装的支持模块:
 BeautifulSoup (pip install或者下载源代码包setup.py),下载链接:https://pypi.python.org/pypi/beautifulsoup4/4.3.2
-
+<br/>
 运行:在windows上直接双击start.bat,linux上没试
-
+<br/>
 我的微信公众号:qiye_python
-
+<br/>
+![](qiye2.jpg)
+<br/>
 博客：http://blog.csdn.net/qiye_/ 和 http://www.cnblogs.com/qiyeboy/
-
-
+<br/>
+使用效果图：
+<br/>
+![](yanshi1.png)
+<br/>
+![](yanshi2.png)
+<br/>
+![](yanshi3.png)

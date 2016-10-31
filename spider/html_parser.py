@@ -26,14 +26,14 @@ class Html_Parser(object):
         # 使用BeautifulSoup模块对html进行解析
         soup = BeautifulSoup(html_cont,'html.parser',from_encoding='utf-8')#str ='<div class="hd"><h2 class="l">Hibernate注解</h2></div>'
         subject = soup.find('div',class_ = "hd").get_text()
-        links = soup.find_all('a',class_='J-media-item studyvideo')
+        links = soup.find_all('a',class_='J-media-item')
         html_down = Html_Downloader()#这个主要是请求视频的真实链接,抓包的时候你就会明白
 
         #下面的代码是将视频信息封装成对象添加到res_data列表中
         for link in links:
             fileinfor = FileInfor()
             fileinfor.subject = subject.strip()
-            fileinfor.filename= link.get_text().strip().replace(':','_')
+            fileinfor.filename= link.get_text().strip().replace(':','_').replace("\r\n","").replace(u'开始学习',"").replace(' ', '')
             fileinfor.mid = link['href'].split('/')[2]
             json = html_down.download(DOWNLOAD_URL.replace('{}',fileinfor.mid)).replace('\/','/').encode('utf-8')
             # print json
